@@ -74,13 +74,48 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Card section */
-
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* About section */
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.profile-container img {
+  border-radius: 100%;
+  width: 40%;
+  box-shadow: 7px 7px 7px;
+}
+
+.bio-container {
+  margin-right: 50px;
+}
+
+/* Contact section */
+
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Card section */
+
 .cards-container {
   display: flex;
   justify-content: space-between;
@@ -164,4 +199,10 @@ footer {
 
 .social-link-items a:hover {
   color: white;
+}
+
+/* form section */
+
+.contact-names {
+  width: 25px;
 }
