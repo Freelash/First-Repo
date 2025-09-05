@@ -6,11 +6,17 @@
 body {
   height: 100vh;
   background-color: grey;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 main {
   max-width: 1024px;
   margin: auto;
   background-color: grey;
+  flex-grow: 1;
 }
 h1 {
   color: blue;
@@ -87,6 +93,25 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  color: beige;
+}
+
+.bio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  color: beige;
+  text-decoration: overline;
+  margin-top: 30px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-container {
@@ -97,12 +122,27 @@ h2 {
 
 .profile-container img {
   border-radius: 100%;
-  width: 40%;
+  width: 300px;
   box-shadow: 7px 7px 7px;
 }
 
 .bio-container {
-  margin-right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: double;
+  width: 500px;
+  height: 300px;
+  margin-top: -10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 0%;
+  padding-top: 0%;
+}
+
+.bio-text {
+  font-size: 25px;
+  color: beige;
 }
 
 /* Contact section */
@@ -111,7 +151,8 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px;
+  font-size: xx-large;
 }
 
 /* Card section */
@@ -205,4 +246,64 @@ footer {
 
 .contact-names {
   width: 25px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-style: double;
+  border-radius: 10px;
+  border-width: 5px;
+  padding: 1.5%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#email {
+  width: 400px;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+
+textarea {
+  width: 400px;
+  background-color: lightblue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+textarea::placeholder {
+  color: grey;
+}
+
+.submit-btn {
+  width: 400px;
+  padding: 4px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.submit-btn:hover {
+  background-color: lightblue;
+  color: black;
+  text-decoration: solid;
 }

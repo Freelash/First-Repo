@@ -26,13 +26,77 @@
     </div>
     <main>
       <form>
-        <div>
+        <p><strong>Please fill out this form</strong></p>
+        <div class="form">
           <label for="Username"></label>
           <input id="username" name="username" placeholder="John" />
           <label for="Username"></label>
           <input id="username" name="username" placeholder="Doe" />
         </div>
+        <div class="form" id="email">
+          <label for="email"> </label>
+          <input
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            type="text"
+          />
+        </div>
+        <div class="form">
+          <label for="contact"></label>
+          <textarea
+            id="contact"
+            name="contact"
+            placeholder="Tell us about yourself"
+            rows="4"
+            cols="50"
+          >
+          </textarea>
+        </div>
+        <div>
+          <button class="submit-btn">Submit</button>
+        </div>
       </form>
     </main>
+    <footer>
+      <div class="logo-footer">
+        <img
+          src="/assets/water-drop-svgrepo-com.svg"
+          alt="Hand holding water"
+        />
+        <p><strong>Bodies of Water</strong></p>
+      </div>
+      <div class="social-links">
+        <ul>
+          <li class="social-link-items">
+            <img
+              src="https://www.svgrepo.com/show/503338/facebook.svg"
+              alt="facebooklogo"
+              class="logo"
+              id="facebook"
+            />
+            <a href="">Facebook</a>
+          </li>
+          <li class="social-link-items">
+            <img
+              src="https://www.svgrepo.com/show/521711/instagram.svg"
+              alt="instagramlogo"
+              class="logo"
+              id="instagram"
+            />
+            <a href="">Instagram</a>
+          </li>
+          <li class="social-link-items">
+            <img
+              src="https://www.svgrepo.com/show/473621/gmail.svg"
+              alt="gmaillogo"
+              class="logo"
+              id="gmail"
+            />
+            <a href="">Gmail</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
