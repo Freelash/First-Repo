@@ -310,6 +310,17 @@ textarea::placeholder {
 
 /* Gallery section */
 
+/*Mobile styles (phones )*/
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 5px !important;
+  }
+}
+
 .gallery-title {
   display: flex;
   justify-content: center;
@@ -317,7 +328,6 @@ textarea::placeholder {
   margin: 30px;
   font-size: xx-large;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -326,7 +336,7 @@ textarea::placeholder {
   padding: 10px;
   width: 1024px;
   height: 1024px;
-  background-color: lightblue;
+  background-color: gray;
   margin-bottom: 10px;
 }
 
@@ -335,7 +345,8 @@ textarea::placeholder {
   font-size: 20px;
   border-radius: 5px;
   border-width: 15px;
-  background-color: grey;
+  box-shadow: 3px 3px 3px;
+  background-color: lightblue;
 }
 
 .i-one {
@@ -360,19 +371,29 @@ textarea::placeholder {
   grid-column: 2/4;
 }
 
-.i-one img {
-  object-fit: cover;
+.grid-item img {
   width: 100%;
 }
 
-.i-two img {
-  object-fit: cover;
-  width: 100%;
+.i-one {
+  background-image: url("assets/cool-water.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.i-three img {
-  object-fit: cover;
-  width: 100%;
+.i-two {
+  background-image: url(assets/waterfalls.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.i-three {
+  background-image: url(assets/waterfall-pond.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .i-four img {
@@ -380,7 +401,14 @@ textarea::placeholder {
   width: 100%;
 }
 
-.i-five img {
-  object-fit: cover;
-  width: 100%;
+.i-five {
+  background-image: url(assets/snow.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery-paragraph {
+  font-size: 26px;
+  color: black;
 }
