@@ -61,11 +61,24 @@ li {
   background-color: lightblue;
   margin-bottom: 5px;
 }
+.header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
 
 /* Burger Menu section */
 
-.burger-menu img {
+.hamburger img {
   display: none;
+}
+
+.burger-menu {
+  display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 /* End burger section */
@@ -405,9 +418,57 @@ textarea::placeholder {
 
 /*Tablet styles*/
 @media (max-width: 768px) {
-  .burger-menu img {
+  .header {
+    flex-direction: column;
+  }
+  .hamburger img {
     display: block;
     width: 30px;
+  }
+  .burger-menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 4px solid black;
+  }
+  .burger-menu.show-menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .burger-menu li {
+    padding: 10px;
+  }
+
+  .navlinks {
+    display: none;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+
+  .navlinks li {
+    flex-basis: 100%;
+  }
+
+  .navlinks a {
+    text-align: center;
+    font: 28px;
+  }
+
+  .navlinks a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .navlinks {
+    padding: 30px 16px;
+    margin-left: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
   }
 
   .grid-container {

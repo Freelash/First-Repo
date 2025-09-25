@@ -9,11 +9,17 @@
 
   <body>
     <div class="header">
-      <div>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/65/Icon-water-blue.svg"
-          class="logo"
-        />
+      <div class="header-nav">
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/65/Icon-water-blue.svg"
+            class="logo"
+          />
+        </div>
+
+        <div class="hamburger">
+          <img src="assets/burger-menu-svgrepo-com.svg" alt="Burger Menu" />
+        </div>
       </div>
       <nav>
         <ul class="navlinks">
@@ -23,18 +29,17 @@
           <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </nav>
+
       <div class="burger-menu">
-        <img src="assets/burger-menu-svgrepo-com.svg" alt="Burger Menu" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
       </div>
     </div>
     <main>
-      <div class="introduction">
-        <!-- <p>Hi, my name is Asher.</p> -->
-      </div>
-      <!-- <label for="user">
-                <input>type.text</input>
-                <button>Click</button>
-                </label> -->
       <div class="img-container">
         <img src="https://jpeg.org/images/jpeg-home.jpg" class="responsive" />
         <button class="hidebutton">hide</button>
@@ -139,6 +144,6 @@
         </ul>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>
