@@ -22,15 +22,28 @@ if (color === "blue") {
   alert(`That is a nice color!`);
 } */
 
-const numberInp = document.querySelector("inputSubmit");
-const guessBtn = document.querySelector("btnGuess");
-const attemptConst = document.querySelector("attemptSpan");
+const numberInp = document.querySelector(".inputSubmit");
+const guessBtn = document.querySelector(".btnGuess");
+const attemptConst = document.querySelector(".attemptSpan");
 
-let secretNumber = Math.floor(Math.random() * 10) + 1;
-guessBTn.addEventListener("click", onGuess);
+let secretNumber = Math.floor(Math.random() * 10 + 1);
+let attemptCount = 0;
+
+guessBtn.addEventListener("click", onGuess);
+
 function onGuess() {
-  attemptConst++;
+  attemptCount++;
   const inputValue = Number(numberInp.value);
-}
-if (secretNum === inputValue) {
+  if (inputValue === secretNumber) {
+    attemptConst.textContent = `You guessed the number in ${attemptCount} attempts.`;
+    numberInp.disabled = true;
+    guessBtn.disabled = true;
+  } else {
+    attemptConst.textContent = `Attempts: ${attemptCount}`;
+    if (inputValue < secretNumber) {
+      alert("Too low! Try again.");
+    } else {
+      alert("Too High! Try again.");
+    }
+  }
 }
